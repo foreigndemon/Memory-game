@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&family=Yeseva+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --text-color:#191919;
+    --bg-color:#EFEAD8;
+    --section-color:#edeef3;
+    --heading-color:#5F7161;
+}
+
+body{
+    color: var(--text-color);
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+}
+
+.header{
+    width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.header > h2{
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.8rem;
+    color: var(--heading-color);
+}
+
+.move-time > h4 {
+    font-size: 1.2rem;
+    color: var(--heading-color);
+} 
+
+section{
+    height: 35rem;
+    width: 35rem;
+    margin: 0  auto;
+    padding:  1.5rem;
+    background-color: var();
+    perspective: 800px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* gap:1.2rem; */
+    justify-items: center;
+    align-items: center;
+}
+
+
+.card{
+    position: relative;
+    height: 6rem;
+    width: 6rem;
+    transform-style:preserve-3d;
+    transition: all 1.5s cubic-bezier(0.175,0.885,0.32,1.275);
+    box-shadow: rgba(0,0,0,0.3) 0px 5px 12px;
+    border-radius: 20px;
+}
+
+.rotateCard{
+    transform: rotateY(180deg);
+}
+
+.face{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    left: 50%;
+    top:10%;
+    transform: translate(-50%, 0);
+    pointer-events: none;
+
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.back{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    background-color: #eee;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    pointer-events: none;
+}
