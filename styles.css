@@ -24,34 +24,50 @@ body{
     margin: 2rem auto;
     padding: 1.5rem 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-weight: 700;
 }
 
-.header > h2{
+h2{
     font-family: 'Yeseva One', cursive;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: var(--heading-color);
+    margin-right:8rem;
 }
 
-.move-time > h4 {
-    font-size: 1.2rem;
+h4 {
+    font-size: 1.4rem;
     color: var(--heading-color);
 } 
+
+.live-time-svg{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.live-time-img{
+    margin-right: 5px;
+    height: 1.8rem;
+    width: 1.8rem;
+}
 
 section{
     height: 35rem;
     width: 35rem;
     margin: 0  auto;
     padding:  1.5rem;
-    background-color: var();
     perspective: 800px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     /* gap:1.2rem; */
     justify-items: center;
     align-items: center;
+    border-radius: 20px;
+    background-color: #EFEAD8;
+    box-shadow: inset 5px 5px 22px #aeab9e,
+            inset -5px -5px 22px #ffffff;
 }
 
 
@@ -65,7 +81,7 @@ section{
     border-radius: 20px;
 }
 
-.rotateCard{
+.rotate-card{
     transform: rotateY(180deg);
 }
 
@@ -77,7 +93,6 @@ section{
     top:10%;
     transform: translate(-50%, 0);
     pointer-events: none;
-
     -khtml-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
@@ -89,7 +104,7 @@ section{
     position: absolute;
     height:100%;
     width: 100%;
-    background-color: #eee;
+    background-color: #F7F7F7;
     backface-visibility: hidden;
     border-radius: 20px;
     pointer-events: none;
