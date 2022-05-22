@@ -17,6 +17,7 @@ body{
     color: var(--text-color);
     font-family: 'Baloo Da 2', cursive;
     font-weight: 500;
+
 }
 
 .header{
@@ -61,7 +62,6 @@ section{
     perspective: 800px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    /* gap:1.2rem; */
     justify-items: center;
     align-items: center;
     border-radius: 20px;
